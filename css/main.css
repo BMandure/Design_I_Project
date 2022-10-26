@@ -113,9 +113,6 @@ img{
     border-left: 5px solid #3483eb;
     transition: .2s;
 }
-.boton, .contenedorModal2{
-    border-radius: 10px;
-}
 .modalItem{
     margin: 5%;
     width: 100%;
@@ -152,8 +149,6 @@ img{
 /*Header*/
 .navbar, .navbar-expand-lg{
     background-color: #73a4ff;
-    /*#99ddff*/
-    
 }
 .navbar-nav{
     width: 100%;
@@ -253,9 +248,9 @@ footer{
 
 /*Carousel*/
 .sliderContainer{
-    padding-top: 10px;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
     padding-bottom: 10px;
     height: 55vh;
 }
@@ -328,8 +323,8 @@ footer{
 .generalContainer{
     width: 100%;
     padding-bottom: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     height: auto;
     margin-bottom: auto;
 }
