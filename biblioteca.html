@@ -1,0 +1,176 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ITI - Biblioteca</title>
+		<link rel='stylesheet' href='css/biblioteca.css'>
+		<script src='main.js'></script>
+		<link rel="icon" href="src/logo_1_original.png">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrisha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	</head>
+	<body class="body">
+
+		<header>
+			<div class="contenedorHeader">
+				<nav class="navbar navbar-expand-lg">
+  					 <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="src/logo_1_original.png", height="70", width="70">
+              </a>
+						  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="hambToggler">
+							<span class="navbar-toggler-icon"></span>
+    					</button>
+    					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    						<ul class="navbar-nav">
+        						<li class="nav-item opcionHeader">
+        							<a class="nav-link" href="index.html">Inicio</a>
+        						</li>
+        						<li class="nav-item dropdown opcionHeader">
+          							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            								Estudiantes
+          							</a>
+          							
+        							<ul class="dropdown-menu">
+  										<li><h6 class="dropdown-header">Programas</h6></li>
+  											<li><a class="dropdown-item" href="https://planeamientoeducativo.utu.edu.uy/emt-informatica">EMT</a></li>
+  											<li><a class="dropdown-item" href="#">CTT</a></li>
+  										  	<li><hr class="dropdown-divider"></li>
+            							</li>
+        								<li>
+  										<li><h6 class="dropdown-header">Horarios</h6></li>
+  											<li><a class="dropdown-item" href="#">EMT</a></li>
+  											<li><a class="dropdown-item" href="#">CTT</a></li>
+  										  	<li><hr class="dropdown-divider"></li>
+            							</li>
+            							<li>
+            								<a class="dropdown-item" href="#">
+            									Exámenes
+            								</a>
+            							</li>
+            							<li>
+            								<a class="dropdown-item" href="#">
+            									Avisos de Inasistencias
+            								</a>
+            							</li>
+          							</ul>
+        						</li>
+	
+        						<li class="nav-item dropdown opcionHeader">
+          							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"aria-expanded="false">
+            							Docentes
+          							</a>
+          								<ul class="dropdown-menu">
+            								<li>
+            									<a class="dropdown-item" href="#">
+            										Reuniones
+            									</a>
+            								</li>
+            								<li>
+            									<a class="dropdown-item" href="#">
+            										Avisos
+            									</a>
+            								</li>
+          								</ul>
+        							</li>
+        							<li class="nav-item opcionHeaderActive">
+          								<a class="nav-link">Biblioteca</a>
+       								</li>
+       								<li class="nav-item opcionHeader">
+        								<a class="nav-link" href="#">Novedades</a>
+        							</li>
+        							<li class="nav-item opcionHeader">
+          								<a class="nav-link" href="#">Contacto</a>
+        							</li>
+      						</ul>
+    					</div>
+ 					</div>
+				</nav>
+			</div>
+		</header>
+	  
+	  <article class="containerLibrary">
+	    <div class="horarioDiv text-center">
+	      <div class="mask">
+	          <div class="align-items-top h-100">
+	              <div class="text-white">
+	                <h1 class="tituloHorario">Horarios</h1>
+	              <div class="optionDivider" style="background-color: #99ddff;"></div>
+	                <div>
+	                  <h3 class="tituloHorario">Matutino</h3>
+	                  <div class="textoHorario">
+	                  <h4 class="subtituloHorario">Lunes a Viernes</h4>
+	                    <p>8:15 a 12:00 hrs.</p>
+	                  </div>
+	                </div>
+	                <div>
+	                  <h3 class="tituloHorario">Vespertino y Nocturno</h3>
+	                  <div class="textoHorario">
+	                  <h4 class="subtituloHorario">Lunes y Miércoles</h4>
+	                    <p>12:30 a 22:30 hrs.</p>
+	                  <h4 class="subtituloHorario">Martes y Jueves</h4>
+	                    <p>15:00 a 21:00 hrs.</p>
+	                  <h4 class="subtituloHorario">Viernes</h4>
+	                    <p>12:30 a 18:20 hrs.</p>
+	                  </div>
+	                </div>
+	              </div>
+	          </div>
+	        </div>
+	    </div>
+
+	    <div class="contactoDiv text-center">
+	        <div class="mask-contacto">
+	          <div>
+	              <div class="text-white">
+	                <h1 class="tituloContacto">Contactos</h1>
+	              <div class="optionDivider-contacto" style="background-color: #99ddff;"></div>
+	                <div>
+	                  <h3 class="tituloContacto">Mail</h3>
+	                  <div class="textoContacto">
+	                  <h4 class="subtituloHorario">
+	                  <a class="linkContacto" href="mailto:bibliotecaiti@gmail.com">bibliotecaiti@gmail.com</a></h4>
+	                  </div>
+	                </div>
+	                <div>
+	                  <h3 class="tituloContacto">Facebook</h3>
+	                  <div class="textoContacto">
+	                  <h4 class="subtituloContacto">
+	                  <a class="linkContacto" href="https://www.facebook.com/bibliotecaiti">Biblioteca Iti</a></h4>
+	                  </div>
+	                </div>
+	              </div>
+	          </div>
+	        </div>
+	    </div>
+	  </article>
+
+	  <footer>
+	        <div class="footer">
+	          <div class="footerTextContainer">
+	            <p class="footerText FooterIzq">©2022 Instituto Tecnológico de Informática</p>
+	          </div>
+	          <div class="footerTextContainer">
+	            <p class="footerText FooterIzq">Durazno 1328 entre Ejido y Aquiles R. Lanza</p>
+	          </div>
+	          <div class="footerTextContainer">
+	            <p class="footerText FooterIzq">Montevideo, Uruguay | <a class="mapLink" href="https://www.google.com/maps/place/ Instituto+Tecnologico+de+Inf%C3%B3rmatica/@-34.9104124,-56.1869142,17.75z/ data=!4m5!3m4!1s0x959f81ceb54e547f:0x592102e53ece4546!8m2!3d-34.9103634!4d-56.1869191">Ver Mapa</a></p>
+	          </div>
+	          
+	        </div>
+	        <div class="footer">
+	          <div class="footerTextContainer">
+	            <p class="footerText FooterDer">Teléfono: 2901 2257 | Fax: 2902 7144 Int. 13</p>
+	          </div>
+	          <div class="footerTextContainer">
+	            <p class="footerText FooterDer">Diseño de página del alumno: </p>
+	          </div>
+	          <div class="footerTextContainer">
+	            <p class="footerText FooterDer">Bruno Manduré - Grupo 2°BM</p>
+	          </div>
+	        </div>
+	      </footer>
+
+	</body>
+	</html>
