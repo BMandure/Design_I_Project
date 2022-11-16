@@ -3,9 +3,8 @@
 
 <head>
 	<meta charset='utf-8'>
-	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<title>Instituto Tecnológico de Informática</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+	<title>Instituto Tecnológico de Informática</title>
 	<link rel='stylesheet' href='css/main.css'>
 	<script src='main.js'></script>
 	<link rel="icon" href="src/logo_1_original.png">
@@ -18,12 +17,9 @@
 
 <body class="body">
 	<header>
-		<div class="contenedorHeader">
+		<div>
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
-						<img src="src/logo_1_original.png" , height="70" , width="70">
-					</a>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation" id="hambToggler">
@@ -72,7 +68,6 @@
 							</li>
 						</ul>
 						</li>
-
 						<li class="nav-item dropdown opcionHeader">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
@@ -106,6 +101,13 @@
 			</nav>
 		</div>
 	</header>
+
+	<div class="cabecera">
+		<div class="tituloCabecera">
+			<img class="logo" src="src/logo_1_original.png">
+			INSTITUTO TECNOLÓGICO DE INFORMÁTICA
+		</div>
+	</div>
 
 	<article class="sliderContainer">
 		<section>
@@ -182,15 +184,47 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="web col-12 col-sm-12 col-lg-6 col-xl-6">
-					<img class="imageOption" , id="linkHorario" , src="src/images/options/turnos.jpg">
-					<div class="textOption">
-						<strong>HORARIOS</strong>
-						<div class="optionDivider divHorarios"></div>
+
+					<div class="flip-card imageOptionHorario">
+
+						<div class="flip-card-inner">
+
+							<div class="flip-card-front">
+								<img class="imageOptionHorario" , id="linkHorario" , src="src/images/options/turnos.jpg"
+									alt="horarios imagen">
+								<div class="textOption">
+									<strong>HORARIOS</strong>
+									<div class="optionDivider divHorarios"></div>
+								</div>
+							</div>
+
+							<div class="flip-card-back">
+								<div class="textoSeleccionar">
+									SELECIONAR
+									<br>
+									HORARIO
+								</div>
+								<ul class="contenedor-opciones nav column">
+									<li class="nav-item modalItem">
+										<a class="boton" href="#" role="button">Turno Matutino</a>
+									</li>
+									<li class="nav-item modalItem">
+										<a class="boton" href="#" role="button">Turno Vespertino</a>
+									</li>
+									<li class="nav-item modalItem">
+										<a class="boton" href="#" role="button">Turno Nocturno</a>
+									</li>
+								</ul>
+							</div>
+
+						</div>
+
 					</div>
+
 				</div>
 				<div class="web col-12 col-sm-12 col-lg-6 col-xl-6">
 					<a href="#">
-						<img class="imageOption" , src="src/images/options/novedades.jpg">
+						<img class="imageOption" , src="src/images/options/novedades.jpg" alt="novedades imagen">
 					</a>
 					<div class="textOption">
 						<strong>NOVEDADES</strong>
@@ -199,7 +233,8 @@
 				</div>
 				<div class="web col-12 col-sm-12 col-lg-6 col-xl-6">
 					<a href="#">
-						<img class="imageOption" , src="src/images/options/inscripciones.jpg">
+						<img class="imageOption" , src="src/images/options/inscripciones.jpg"
+							alt="inscripciones imagen">
 					</a>
 					<div class="textOption">
 						<strong>INSCRIPCIONES</strong>
@@ -208,7 +243,7 @@
 				</div>
 				<div class="web col-12 col-sm-12 col-lg-6 col-xl-6">
 					<a href="#">
-						<img class="imageOption" , src="src/images/options/calendario.jpg">
+						<img class="imageOption" , src="src/images/options/calendario.jpg" alt="calendario imagen">
 					</a>
 					<div class="textOption">
 						<strong>CALENDARIO DE EXÁMENES</strong>
@@ -226,77 +261,126 @@
 					<h1 class="tituloPerfil">Perfil de Egreso</h1>
 					<div>
 						<h3 class="tituloPerfil">Perfil genérico</h3>
-						<div class="optionDivider"></div>
+						<div class="optionDividerPerfil"></div>
 						<div class="textoPerfil">
-							<p></br>Comprender los fundamentos científicos - tecnológicos de los procesos productivos,
-								relacionando la teoría con la práctica de diversas
-								</br>áreas de saber, con vistas al ejercicio de ciudadanía y la preparación para el
-								trabajo.
-								</br></br>• Buscar, seleccionar, interpretar y comunicar información científico -
-								tecnico - tecnológica referida al área de formación específica.
-								</br>• Aplicar medidas de protección ambiental valorando la dualidad beneficio -
-								perjuicio del desarrollo científico - técnico - tecnológico.
-								</br>• Desarrollar actitud ética, autonomía intelectual y pensamiento crítico.
-								</br>• Comprender el entorno social, económico, cultural y ambiental en el que viven.
-							</p>
+							<div class="fondoPerfil">
+								<p>
+								<div class="presentacionPerfil">
+									<strong>
+										Comprender los fundamentos científicos - tecnológicos de los procesos
+										productivos,
+										relacionando la teoría con la práctica de diversas
+										</br>
+										áreas de saber, con vistas al ejercicio de ciudadanía y la preparación para el
+										trabajo.
+									</strong>
+								</div>
+								<br>
+								<ul>
+									<li>
+										Buscar, seleccionar, interpretar y comunicar información científico - tecnico -
+										tecnológica referida al área de formación específica.
+									</li>
+									<li>
+										Aplicar medidas de protección ambiental valorando la dualidad beneficio -
+										perjuicio
+										del desarrollo científico - técnico - tecnológico.
+									</li>
+									<li>
+										Desarrollar actitud ética, autonomía intelectual y pensamiento crítico.
+									</li>
+									<li>
+										Comprender el entorno social, económico, cultural y ambiental en el que viven.
+									</li>
+								</ul>
+								</p>
+							</div>
 						</div>
 					</div>
 					<div>
 						<h3 class="tituloPerfil">Perfil específico</h3>
-						<div class="optionDivider" style="background-color: #99ddff;"></div>
+						<div class="optionDividerPerfil"></div>
 						<div class="textoPerfil">
-							<p>Poseer destrezas y habilidades operatívas, conocimientos técnicos - tecnológicos -
-								científicos - culturales,
-								</br>que lo habilitan a enfrentar bajo supervisión, situaciones propias de su nivel
-								tales como:
-								</br>• Identificar los problemas de IT y Redes y asignarles prioridad, de acuerdo a los
-								criterios definidos.
-								</br></br> Atender en forma remota aquellas incidencias que no requieren más de cinco
-								minutos para su resolución:
-								</br>• Asignar las incidencias a los grupos de resolución.
-								</br>• Realizar el seguimiento de la incidencia hasta su resolución para poder informar
-								al usuario el estado de la misma.
-								</br>• Confirmar la satisfacción del usuario con respecto a la solución brindada.
-								</br></br> Realizar estadísticas de las incidencias: por grupos de resolucion, tiempos
-								de resolucionución, usuarios, etc.
-								</br>• Ejecutar planes de contingencia en aquellos casos en los que el responsable del
-								servicio lo indique.
-								</br>• Contribuír al control de la base de datos de los usuarios.
-								</br>• Elevar reportes periódicos de la actividad realizada al responsable del servicio.
-								</br></br> Realizar la atención a los usuarios de tecnología informática que:
-								</br>• Interrumpen la normal operatoria del trabajo
-								</br>• Requieran soporte sobre el hardware y/o software instalado
-								</br>• Requieran nuevos productos de hardware y/o software
-								</br>• Generen consultas y/o asesoramiento en el funcionamiento y/o utilización de los
-								recursos informáticos disponibles</p>
+							<div class="fondoPerfil">
+								<p>
+								<div class="presentacionPerfil">
+									<strong>
+										Poseer destrezas y habilidades operatívas, conocimientos técnicos -
+										tecnológicos -
+										científicos - culturales,
+										</br>
+										que lo habilitan a enfrentar bajo supervisión, situaciones propias de su nivel
+										tales como:
+									</strong>
+								</div>
+
+								<ul>
+									</br>
+									</br>
+									<li>
+										Identificar los problemas de IT y Redes y asignarles prioridad, de acuerdo a los
+										criterios definidos.
+									</li>
+									<li>
+										Atender en forma remota aquellas incidencias que no requieren más de cinco
+										minutos para su resolución:
+									</li>
+									</br>
+									<ul>
+										<li>
+											Asignar las incidencias a los grupos de resolución.
+										</li>
+										<li>
+											Realizar el seguimiento de la incidencia hasta su resolución para poder
+											informar
+											al usuario el estado de la misma.
+										</li>
+										<li>
+											Confirmar la satisfacción del usuario con respecto a la solución brindada.
+										</li>
+										<li>
+											Realizar estadísticas de las incidencias: por grupos de resolucion, tiempos
+											de resolucionución, usuarios, etc.
+										</li>
+									</ul>
+									<br>
+									<li>
+										Ejecutar planes de contingencia en aquellos casos en los que el responsable del
+										servicio lo indique.
+									</li>
+									<li>
+										Contribuír al control de la base de datos de los usuarios.
+									</li>
+									<li>
+										Elevar reportes periódicos de la actividad realizada al responsable del
+										servicio.
+									</li>
+									<li>
+										Realizar la atención a los usuarios de tecnología informática que:
+									</li>
+									<br>
+									<ul>
+										<li>
+											Interrumpen la normal operatoria del trabajo
+										</li>
+										<li>
+											Requieran soporte sobre el hardware y/o software instalado
+										</li>
+										<li>
+											Requieran nuevos productos de hardware y/o software
+										</li>
+										<li>
+											Generen consultas y/o asesoramiento en el funcionamiento y/o utilización de
+											los
+											recursos informáticos disponibles
+										</li>
+									</ul>
+								</ul>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="modalHorario">
-		<div class="contenedorModal">
-			<div class="contenedorModal2">
-				<ul class="nav column">
-					<li class="nav-item modalSepTitulo">
-						<div class="contenedorTituloModal">
-							<h1 class="modalTitulo">Seleccionar Horario</h1>
-							<span id="cerrarModalHorario">&times;</span>
-						</div>
-					</li>
-					<!--<li class="separador"></li>-->
-					<li class="nav-item modalItem">
-						<a class="boton" href="#" role="button">Turno Matutino</a>
-					</li>
-					<li class="nav-item modalItem">
-						<a class="boton" href="#" role="button">Turno Vespertino</a>
-					</li>
-					<li class="nav-item modalItem">
-						<a class="boton" href="#" role="button">Turno Nocturno</a>
-					</li>
-				</ul>
 			</div>
 		</div>
 	</div>
@@ -310,11 +394,9 @@
 				<p class="footerText FooterIzq">Durazno 1328 entre Ejido y Aquiles R. Lanza</p>
 			</div>
 			<div class="footerTextContainer">
-				<p class="footerText FooterIzq">Montevideo, Uruguay | <a class="mapLink"
-						href="https://www.google.com/maps/place/Instituto+Tecnologico+de+Inf%C3%B3rmatica/@-34.9104124,-56.1869142,17.75z/data=!4m5!3m4!1s0x959f81ceb54e547f:0x592102e53ece4546!8m2!3d-34.9103634!4d-56.1869191">Ver
-						Mapa</a></p>
+				<p class="footerText FooterIzq">Montevideo, Uruguay | <button id="link" type="button">Ver Mapa</button>
+				</p>
 			</div>
-
 		</div>
 		<div class="footer">
 			<div class="footerTextContainer">
@@ -329,7 +411,19 @@
 		</div>
 	</footer>
 
-	<script link src="js/index.js"></script>
+	<div id="abrirModal">
+		<div></div>
+	</div>
+	<div id="fondoModal" class="modal">
+		<div class="contenidoModal">
+			<iframe class="mapa"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.8441995270637!2d-56.1891136487758!3d-34.9103591811987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81b890bbd9cb%3A0xf6d281d9865091ac!2sITI!5e0!3m2!1ses-419!2suy!4v1667786119659!5m2!1ses-419!2suy"
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+		<span class="cerrar">CERRAR MAPA</span>
+	</div>
+
+	<script link src="js/javaScript.js"></script>
 
 </body>
 
