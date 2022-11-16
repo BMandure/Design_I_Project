@@ -17,7 +17,7 @@
 
 <body class="body">
 
-	<header>
+	<header id="uno">
 		<div>
 			<nav class="navbar navbar-expand-lg">
 				<div class="container-fluid">
@@ -30,6 +30,31 @@
 						<ul class="navbar-nav">
 							<li class="nav-item opcionHeader">
 								<a class="nav-link" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item opcionHeaderActive">
+								<a class="nav-link" href="biblioteca.html">Biblioteca</a>
+							</li>
+							<li class="nav-item opcionHeader">
+								<a class="nav-link" href="#">Contacto</a>
+							</li>
+
+							<li class="nav-item dropdown opcionHeader">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+									aria-expanded="false">
+									Docentes
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<a class="dropdown-item" href="#">
+											Reuniones
+										</a>
+									</li>
+									<li>
+										<a class="dropdown-item" href="#">
+											Avisos
+										</a>
+									</li>
+								</ul>
 							</li>
 							<li class="nav-item dropdown opcionHeader">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -69,33 +94,8 @@
 							</li>
 						</ul>
 						</li>
-
-						<li class="nav-item dropdown opcionHeader">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-								aria-expanded="false">
-								Docentes
-							</a>
-							<ul class="dropdown-menu">
-								<li>
-									<a class="dropdown-item" href="#">
-										Reuniones
-									</a>
-								</li>
-								<li>
-									<a class="dropdown-item" href="#">
-										Avisos
-									</a>
-								</li>
-							</ul>
-						</li>
-						<li class="nav-item opcionHeaderActive">
-							<a class="nav-link" href="biblioteca.html">Biblioteca</a>
-						</li>
 						<li class="nav-item opcionHeader">
 							<a class="nav-link" href="#">Novedades</a>
-						</li>
-						<li class="nav-item opcionHeader">
-							<a class="nav-link" href="#">Contacto</a>
 						</li>
 						</ul>
 					</div>
@@ -195,6 +195,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<div class="topContainer">
+		<a href="#uno" id="topButton"><img class="arrowUp" src="../src/images/arrowUp.png" alt="arrow-Up"></a>
+	</div>
 
 	<div id="abrirModal">
 		<div></div>
